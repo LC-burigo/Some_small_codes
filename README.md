@@ -3,6 +3,7 @@
 
 *Routine*
 
+   <img src="Diagrama em branco.png"  width=600>
 
 
 second project - Web scraping pprogram that takes all the films on a page and organizes them by year;
