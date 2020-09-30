@@ -20,7 +20,7 @@ This code scraps a site of films, catching all the films and put then inside of 
 
 
 
-### :three: program - a incomplete deck game
+### :three: project - a incomplete deck game
 i don´t know which card game i will create. :stuck_out_tongue_winking_eye:
 
 
