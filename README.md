@@ -1,14 +1,14 @@
 # Some_small_codes
 
-### Frist project - program that asks the power of generators and consumers, in order to calculate the difference.:zap::construction_worker:
+### :one: project - program that asks the power of generators and consumers, in order to calculate the difference.:zap::construction_worker:
 
-*Routine*
+***Routine***
 
    <img src="Diagrama em branco.png"  width=600>
 
 
 
-### Second project - Web scraping pprogram that takes all the films on a page and organizes them by year;
+### :two: project - Web scraping pprogram that takes all the films on a page and organizes them by year;
 
 This code scraps a site of films, catching all the films and put then inside of a dictionary, by year.
 
@@ -20,7 +20,7 @@ This code scraps a site of films, catching all the films and put then inside of 
 
 
 
-### Third program - a incomplete deck game
+### :three: program - a incomplete deck game
 i don´t know which card game i will create. :stuck_out_tongue_winking_eye:
 
 
