@@ -20,7 +20,7 @@ This code scraps a site of films, catching all the films and put then inside of 
 
 
 
-### :three: project - a incomplete deck game
+### :three: project - an incomplete Loan class
 
 I write a loan class for payroll loans. This little program are in development progress...:moneybag:
 
