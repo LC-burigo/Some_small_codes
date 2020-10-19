@@ -1,52 +1,24 @@
-print("Estes resultados abaixo são relativos à funções apenas")
+    def Margem(self):
+        margem = self.salario * self.porcentagem
+        return margem
+
+    def EmprestimosAtivos(self, valor_emprestimo):
+        porcentagem = valor_emprestimo / self.salario
+        self.porcentagem -= porcentagem
+        return self.porcentagem
+
+    def FazerEmprestimo(self, valor_emprestimo):
+        if 0 < valor_emprestimo <= self.Margem():
+            porcentagem = valor_emprestimo / self.salario
+            self.porcentagem -= porcentagem
+            return self.porcentagem
+        else:
+            print("O valor do seu empréstimo tem que ser maior que 0 e menor ou igual que a sua margem. ")
+            print("O valor da sua margem é {}".format(self.Margem()))
+
+    def ValorFinanciado(self, j, n, p):
+        q = ((1 - (1 + (j / 100)) ** (-n)) / (j / 100)) * p
+        return q
 
 
-def Fator_Parcelamento(taxa_de_juros, numero_de_parcelas):
-    FP = (((1 + taxa_de_juros)**numero_de_parcelas) - 1)/(((1 + taxa_de_juros)**numero_de_parcelas) * taxa_de_juros)
-    return FP
-
-
-def Total_a_pagar(valor_a_vista, x, y, func):
-    Valor_parcela = valor_a_vista/func(x, y)
-    total_pagar = Valor_parcela * y
-    print(Valor_parcela)
-    return total_pagar
-
-
-print(Fator_Parcelamento(2/100, 30))
-teste = Total_a_pagar(2, 2/100, 30, Fator_Parcelamento)
-print(teste)
-print("#" * 30)
-
-print("Estes resultados abaixo são relativos à uma classe")
-
-
-class Pagamento:
-    def __init__(self, taxa_de_juros, numero_de_parcelas, valor_a_vista):
-        self.taxa_de_juros = taxa_de_juros
-        self.numero_de_parcelas = numero_de_parcelas
-        self.valor_a_vista = valor_a_vista
-
-    def fator_de_parcelamento(self):
-        fp = (((1 + self.taxa_de_juros) ** self.numero_de_parcelas) - 1) / (
-                    ((1 + self.taxa_de_juros) ** self.numero_de_parcelas) * self.taxa_de_juros)
-        return fp
-
-    def valor_parcela(self):
-        vp = self.valor_a_vista/self.fator_de_parcelamento()
-        return vp
-
-    def valor_total(self):
-        vt = self.valor_parcela() * self.numero_de_parcelas
-        return vt
-
-
-Lucas = Pagamento(2/100, 30, 2)
-print(Lucas.fator_de_parcelamento())
-print(Lucas.valor_parcela())
-print(Lucas.valor_total())
-
-
-
-
-
+Lucas = Emprestimo(6000, 35 / 100)
