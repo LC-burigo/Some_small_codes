@@ -22,6 +22,6 @@ This code scraps a site of films, catching all the films and put then inside of 
 
 ### :three: project - a incomplete deck game
 
-I write two Financial codes to help a friend. 
+I write a loan class for payroll loans. This little program are in development progress...:moneybag:
 
 
